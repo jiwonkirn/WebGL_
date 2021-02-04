@@ -1,0 +1,72 @@
+{
+  "defaultSeverity": "error",
+  "extends": ["tslint-config-airbnb", "tslint-react", "tslint-config-prettier"],
+  "jsRules": {},
+  "rules": {
+    "strict-boolean-expressions": false,
+    "import-name": false,
+    "jsx-wrap-multiline": false,
+    "jsx-no-multiline-js": false,
+    "semicolon": [true, "never"],
+    "max-line-length": [true, 300],
+    "jsx-no-lambda": false,
+    "indent": [true, "spaces", 2],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "arrays": "always",
+          "exports": "always",
+          "functions": "ignore",
+          "imports": "always",
+          "objects": "always",
+          "typeLiterals": "never"
+        },
+        "singleline": "never"
+      }
+    ],
+    "align": [true, "elements", "parameters", "statements", "members"],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case", "allow-leading-underscore"],
+    "no-unused-variable": true,
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-type-operator",
+      "check-preblock"
+    ],
+    "object-curly-spacing": [true, "always"],
+    "function-name": [
+      true,
+      {
+        "method-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$",
+        "private-method-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$",
+        "protected-method-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$",
+        "static-method-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$",
+        "function-regex": "^\\*?\\[?[a-zA-Z][\\w\\d\\.]*\\]?$"
+      }
+    ]
+  },
+  "rulesDirectory": []
+}
